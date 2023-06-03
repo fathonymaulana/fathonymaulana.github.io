@@ -114,7 +114,7 @@ li {
     justify-content: center;
 
     z-index: -1;
-    border: 1px solid white;
+/*     border: 1px solid white; */
     background: rgba(0, 0, 0, 0.45);
 }
 
