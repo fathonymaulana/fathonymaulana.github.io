@@ -4,6 +4,7 @@
 /*==================== SRC BOOTSTRAP ====================*/
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
+
 /*====================       BASE      ====================*/
 
 /* Components */
@@ -29,7 +30,93 @@
         --font-family-sixCaps: 'Six Caps', normal;
 }
 
-/* --Base */
+/* Splash Screen*/
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Color-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 101;
+}
+
+.loader.display-none {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+
+    z-index: -10;
+
+}
+
+.loader_inner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+.line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: var(--Color-1);
+    display: inline-block;
+    animation: horizontalLine 8s ease-in-out 0s;
+}
+
+@keyframes horizontalLine {
+    0% {
+        width: 0%;
+        height: 1px;
+    }
+    85% {
+        width: 100%;
+        height: 1px;
+    }
+    100% {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.text {
+    position: absolute;
+    top: calc(50% + 10px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    opacity: 0;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--Color-1);
+    
+    animation: loaderText 1.4s ease-in-out 0s 5;
+}
+@keyframes loaderText {
+    50% {
+        opacity: 1;
+    }
+}
+
+/* --HTML */
 
 html {
     position: relative;
@@ -47,8 +134,10 @@ body::-webkit-scrollbar{
 
 body {
     color: var(--Color-5);
-    font-family: 'Inter';
+    display: block;
+    font-family: 'inter',sans-serif;
     font-style: normal;
+    /* font-weight: 700 */
 }
 
 h1 {
@@ -56,6 +145,9 @@ h1 {
     line-height: 85.02%;
     letter-spacing: -0.07em;
     color: var(--Color-5);
+    font-family: 'Avant Garde',sans-serif;
+    font-style: normal;
+    
     cursor: default;
 }
 
@@ -95,6 +187,9 @@ li {
     height: 100vh;
     box-sizing: border-box;
 
+    margin-top: -1%;
+    left: 0;
+
     /* border: 1px solid white; */
 }
 
@@ -114,8 +209,7 @@ li {
     justify-content: center;
 
     z-index: -1;
-    /* border: 1px solid white; */
-    background: rgba(0, 0, 0, 0.45);
+    /* border: 1px solid white; */;
 }
 
 .body-b {
@@ -263,7 +357,7 @@ body:hover ~ .cursor
 }
 
 .logo {
-    font-size: 45px;
+    transform: scale(3);
     display: flex;
 }
 
@@ -273,8 +367,8 @@ body:hover ~ .cursor
 }
 
 .social {
+    position: relative;
     line-height: 80px;
-    font-size: 25px;
     bottom: 0;
 
     display: flex;
@@ -287,15 +381,21 @@ body:hover ~ .cursor
     transition: all .3S ease;
     text-decoration: none;
     color: var(--Color-5);
+
+    transform: scale(1);
+    /* border: 1px solid white; */
 }
 
-.logo a:hover,
+.logo a:hover {
+    color: var(--Color-4);
+    transform: scale(1.5);
+}
+
 .social .bi-facebook:hover,
 .social .bi-instagram:hover,
 .social .bi-linkedin:hover {
     color: var(--Color-4);
-    cursor: pointer;
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .right {
@@ -337,6 +437,7 @@ body:hover ~ .cursor
 .right ul li a:hover {
     color: var(--Color-5);
     padding-right: 15px;
+    font-weight: 600;
 }
 
 /*==================== HERO ====================*/
@@ -377,8 +478,7 @@ body:hover ~ .cursor
 
 .hero img {
     position: absolute;
-    /* z-index: 100; */
-    top: 1%;
+    top: .8%;
     bottom: 0;
     left: 16%;
     right: 0;
@@ -396,7 +496,7 @@ body:hover ~ .cursor
 
 /*==================== ABOUT SECTION ====================*/
 .title-0 {
-    margin-top: -4%;
+    margin-top: 0%;
 }
 
 .title-1 {
@@ -405,7 +505,7 @@ body:hover ~ .cursor
 
 .coffee-1 {
     position: absolute;
-    top: 20.5%;
+    top: 20%;
     left: -80px;
     z-index: 1;
 }
@@ -415,7 +515,7 @@ body:hover ~ .cursor
     width: 265px;
     height: 276px;
     left: 1390px;
-    top: 26%;
+    top: 25.5%;
     z-index: 1;
 }
 
@@ -427,7 +527,7 @@ body:hover ~ .cursor
     /* position: absolute; */
     margin-left: -20%;
     padding-left: 215px;
-    height: 110px;
+    height: 95px;
     width: 300%;
 
     display: flex;
@@ -519,8 +619,12 @@ body:hover ~ .cursor
     border-top: 1px solid var(--Color-2);
     /* overflow: hidden; */
 
-    transition: all .3s ease-in;
+    transition: all .3s ease-in-out;
     transform: translateX(0%);
+}
+
+.container-10 {
+    border-bottom: 1px solid var(--Color-2);
 }
 
 .container-6 .division .work-place,
@@ -615,7 +719,7 @@ body:hover ~ .cursor
     padding-left: 220px;
     padding-right: 220px;
 
-    height: 110px;
+    height: 95px;
     width: 100%;
 
     display: flex;
@@ -636,7 +740,7 @@ body:hover ~ .cursor
 .container-13:hover,
 .container-14:hover,
 .container-15:hover {
-    height: 150px;
+    height: 120px;
 
     color: var(--Color-1);
     background: var(--Color-4);
@@ -648,7 +752,7 @@ body:hover ~ .cursor
 
 .planet-1 {
     position: absolute;
-    top: 57.2%;
+    top: 57%;
 
     margin-left: 0;
     margin-right: 0;
@@ -661,7 +765,7 @@ body:hover ~ .cursor
 .title-5 {
     position: relative;
 
-    margin-top: 7%;
+    margin-top: 0%;
     padding-left: 12px;
 }
 
@@ -670,7 +774,7 @@ body:hover ~ .cursor
 .container-18,
 .container-19 {
     /* position: absolute; */
-    height: 110px;
+    height: 95px;
     width: 300%;
     margin-left: -20%;
     padding-left: 220px;
@@ -720,7 +824,7 @@ body:hover ~ .cursor
 
 .coffee-2 {
     position: absolute;
-    top: 68%;
+    top: 67%;
     left: -80px;
     z-index: 1;
 }
@@ -730,7 +834,7 @@ body:hover ~ .cursor
     width: 265px;
     height: 276px;
     left: 1390px;
-    top: 72%;
+    top: 70%;
     z-index: 1;
 }
 
@@ -841,7 +945,7 @@ footer ul {
 .email {
     position: absolute;
     right: 253px;
-    bottom: 3.5%;
+    bottom: 3.30%;
     display: flex;
     flex-direction: column;
 }
@@ -870,7 +974,7 @@ footer ul {
 .phone {
     position: absolute;
     right: 335px;
-    bottom: 2.8%;
+    bottom: 2.6%;
     display: flex;
     flex-direction: column;
 }
