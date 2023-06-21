@@ -19,13 +19,6 @@ document.querySelector("li").onmouseover = event => {
 
 }
 
-//Reset scroll top
-// history.scrollRestoration = "manual";
-
-// $(window).on('beforeunload', function(){
-//       $(window).scrollTop(0);
-// });
-
 // splash Screen
 const loader = document.querySelector('.loader');
 
