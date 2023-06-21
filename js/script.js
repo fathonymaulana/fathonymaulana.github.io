@@ -20,8 +20,18 @@ document.querySelector("li").onmouseover = event => {
 }
 
 //Reset scroll top
-history.scrollRestoration = "manual";
+// history.scrollRestoration = "manual";
 
-$(window).on('beforeunload', function(){
-      $(window).scrollTop(0);
-});
+// $(window).on('beforeunload', function(){
+//       $(window).scrollTop(0);
+// });
+
+// splash Screen
+const loader = document.querySelector('.loader');
+
+document.addEventListener('DOMContentLoaded', (e) => {
+    setTimeout(()=> {
+        loader.classList.add('display-none');
+
+    }, 7500);
+})
