@@ -718,11 +718,18 @@ button:hover,
   font-size: var(--medium-fz);
 }
 
+.big-text {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
 .big-text p {
   font-family: 'MyFont-Display', sans-serif;
   font-size: 74px;
   font-weight: 600;
   line-height: 95%;
+  padding: 5px 0px;
 }
 
 /* ----------------------------------------------  */
