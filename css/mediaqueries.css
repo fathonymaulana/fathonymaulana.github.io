@@ -1,0 +1,375 @@
+@import url(./style.css);
+
+@media screen and (max-width: 1400px) {
+  .jumbotron-project {
+    background-position: -300px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  /* ----------------------------------------------  */
+  /* DESKTOP-NAV */
+  /* ----------------------------------------------  */
+  #header {
+    padding: 10px 120px;
+  }
+
+  .logo p {
+    font-size: var(--small-fz);
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-HERO-JUMBOTRON */
+  /* ----------------------------------------------  */
+  .hero-left {
+    font-size: var(--very-big-fz);
+  }
+
+  .hero-right {
+    font-size: var(--normal-fz);
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-ABOUT */
+  /* ----------------------------------------------  */
+  .title {
+    font-size: var(--very-big-fz);
+  }
+
+  .right-info {
+    font-size: var(--normal-fz);
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-EXPERIENCE */
+  /* ----------------------------------------------  */
+  .countdown h1 {
+    font-size: var(--very-big-fz);
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-TESTIMONIALS */
+  /* ----------------------------------------------  */
+  .testimonials-card-container {
+    padding: 80px 0px;
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-SERVICES */
+  /* ----------------------------------------------  */
+  #services .title {
+    position: relative;
+    padding-right: 120px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 0px 30px;
+  }
+
+  .menu-links {
+    right: 30px;
+  }
+
+  /* ----------------------------------------------  */
+  /* DESKTOP-NAV */
+  /* ----------------------------------------------  */
+  #header {
+    padding: 10px 30px;
+  }
+
+  .clock-container {
+    display: none;
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-HERO-JUMBOTRON */
+  /* ----------------------------------------------  */
+  .hero {
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .hero-left {
+    font-size: var(--big-fz);
+  }
+
+  /* ----------------------------------------------  */
+  /* SERVICES-MINI-INFO */
+  /* ----------------------------------------------  */
+  .services-mini-info {
+    padding: 10px 30px;
+
+  }
+
+  .services-mini-info p {
+    font-size: var(--small-fz);
+  }
+
+  .info-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-ABOUT */
+  /* ----------------------------------------------  */
+  #about,
+  #experience,
+  #skills,
+  #projects,
+  #testimonials {
+    padding: 30px;
+  }
+
+  .title {
+    padding-bottom: 30px;
+  }
+
+  .intro {
+    padding: 30px;
+  }
+
+  .quotes p {
+    font-size: var(--small-fz);
+  }
+
+  .big-text p {
+    font-size: var(--big-fz);
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-EXPERIENCE */
+  /* ----------------------------------------------  */
+  .clients-title {
+    padding: 30px;
+  }
+
+  .clients {
+    padding: 30px;
+    gap: 10px;
+  }
+
+  .bank-mandiri {
+    width: 185px;
+    height: 64px;
+  }
+
+  .seafood-nakama {
+    width: 127px;
+    height: 64px;
+  }
+
+  .belgareti {
+    width: 151px;
+    height: 57px;
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-PROJECTS */
+  /* ----------------------------------------------  */
+  .jumbotron-project-wrapper {
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .wrapper-right {
+    justify-content: space-between;
+  }
+
+  .big-quotes-container {
+    display: none;
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-TESTIMONIALS */
+  /* ----------------------------------------------  */
+  .testimonials-card-container {
+    padding: 80px 0px;
+    flex-direction: column;
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-SERVICES */
+  /* ----------------------------------------------  */
+  #services,
+  #contact {
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .services-info-container {
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-SKILLS */
+  /* ----------------------------------------------  */
+  .skills {
+    gap: 250px;
+  }
+
+  /* ----------------------------------------------  */
+  /* FOOTER */
+  /* ----------------------------------------------  */
+  footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  footer .services {
+    gap: 120px;
+  }
+}
+
+@media screen and (max-width: 431px) {
+
+  /* ----------------------------------------------  */
+  /* DESKTOP-NAV */
+  /* ----------------------------------------------  */
+  .menu-links {
+    padding: 60px;
+    right: 30px;
+  }
+
+  .header-menu-links {
+    gap: 30px;
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-HERO-JUMBOTRON */
+  /* ----------------------------------------------  */
+  .hero-left {
+    font-size: var(--big-fz);
+  }
+
+  .hero-right {
+    font-size: var(--normal-fz);
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-ABOUT */
+  /* ----------------------------------------------  */
+
+  .profile-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-container .profile-detail p,
+  .profile-container .profile-detail span {
+    font-size: 12px;
+  }
+
+  .wrapper p {
+    font-size: 16px;
+    font-weight: var(--fw-2);
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-EXPERIENCE */
+  /* ----------------------------------------------  */
+  .bank-mandiri {
+    width: 95px;
+    height: 44px;
+  }
+
+  .seafood-nakama {
+    width: 95px;
+    height: 44px;
+  }
+
+  .belgareti {
+    width: 95px;
+    height: 40px;
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-TESTIMONIALS */
+  /* ----------------------------------------------  */
+  .testimonials-card-container {
+    gap: 10px;
+  }
+
+  .project-summary {
+    font-size: var(--big-fz);
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-SERVICES */
+  /* ----------------------------------------------  */
+  #services,
+  #contact {
+    gap: 30px;
+  }
+
+  /* ----------------------------------------------  */
+  /* FOOTER */
+  /* ----------------------------------------------  */
+  footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  footer .services {
+    flex-direction: column;
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  /* ----------------------------------------------  */
+  /* DESKTOP-NAV */
+  /* ----------------------------------------------  */
+  .menu-links {
+    padding: 60px;
+    right: 0px;
+  }
+
+  .header-menu-links {
+    gap: 30px;
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-HERO-JUMBOTRON */
+  /* ----------------------------------------------  */
+  .hero-left {
+    font-size: var(--normal-fz);
+  }
+
+  .hero-right {
+    font-size: var(--medium-fz);
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-ABOUT */
+  /* ----------------------------------------------  */
+  .title {
+    font-size: var(--big-fz);
+  }
+
+  .left-info ul li p {
+    font-size: var(--small-fz);
+  }
+
+  .right-info p {
+    font-size: var(--medium-fz);
+  }
+
+  /* ----------------------------------------------  */
+  /* SECTION-SKILLS */
+  /* ----------------------------------------------  */
+  .skills {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

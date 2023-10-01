@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fathony Maulana Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mediaqueries.css" />
+  <link rel="shortcut icon" href="./assets/Favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+  <!-- 
+    #PRELOADER 
+  -->
+  <div class="preload" data-preload>
+    <div class="container">
+      <div class="circle"></div>
+      <img src="./assets/FM-logo.png" alt="" width="50px" height="50px">
+    </div>
+  </div>
+  <!-- 
+    #DESKTOP-NAV
+  -->
+  <div class="main" id="butter">
+    <div class="overlay" data-nav-toggler data-overlay></div>
+    <section id="header">
+      <div class="logo">
+        <img src="./assets/Logo.png" alt="" width="35px" height="35px">
+        <p>Fathony Maulana</p>
+      </div>
+      <div class="menu-container">
+        <div class="clock-container">
+          <span class="region">Jakarta, Indonesia</span>
+          <div class="clock">
+            <p id="hrs">00</p>
+            <p>:</p>
+            <p id="min">00</p>
+            <p>:</p>
+            <p id="sec">00</p>
+          </div>
+          <span>WIB</span>
+        </div>
+        <div class="menu-wrapper">
+          <p>Menu</p>
+          <button class="menu" onclick="toggleMenu()">
+            <i class="bi bi-three-dots-vertical"></i>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <nav class="menu-links">
+      <div class="header-menu-links">
+        <div class="logo">
+          <img src="./assets/Logo.png" alt="" width="50px" height="50px">
+        </div>
+        <div class="close-btn">
+          <p>Close</p>
+          <button class="menu" onclick="toggleMenu()">
+            <i class="bi bi-x-lg"></i>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <ul class="menu-list">
+        <li><a class="about" href="#about" onclick="toggleMenu()">About</i></a></li>
+        <li><a class="experience" href="#experience" onclick="toggleMenu()">Experience</i></a></li>
+        <li><a class="skills" href="#skills" onclick="toggleMenu()">Skills</i></a></li>
+        <div class="project-list-container">
+          <li><a href="#projects" onclick="toggleMenu()">Projects</i></a></li>
+          <div class="notification">
+            <p>1</p>
+          </div>
+        </div>
+        <li><a class="testimonials" href="#testimonials" onclick="toggleMenu()">Testimonials</i></a></li>
+        <li><a class="contact" href="#contact" onclick="toggleMenu()">Contact</i></a></li>
+      </ul>
+      <div class="socials">
+        <p>Email: <a href="mailto:maulanafathony@gmail.com">maulanafathony@gmail.com</a></p>
+        <i class="bi bi-arrow-up-right"></i>
+      </div>
+    </nav>
+
+
+    <!-- 
+    #SECTION-HERO-JUMBOTRON
+  -->
+    <div class="hero" aria-hidden="true">
+      <div class="hero-left">
+        <h1 class="hero-title-1"><span style="font-family: 'MyFont-Display', sans-serif;">Creative</span> Design</h1>
+        <h1 class="hero-title-2">& Frontend</h1>
+        <h1 class="hero-title-3"><span style="font-family: 'MyFont-Display', sans-serif;">Development</span></h1>
+      </div>
+      <div class="hero-right">
+        <div class="text">
+          <p class="hero-text">My job is to create a cool</p>
+          <p class="hero-text">experiences for startups and tech</p>
+          <p class="hero-text">company. by ensuring the users</p>
+          <p class="hero-text">and their business needs.</p>
+        </div>
+        <div class="profile-container">
+          <div class="wrapper">
+            <img src="./assets/profile-pic.png" alt="" width="50px" height="50px">
+            <div class="profile-detail">
+              <p class="fullname">Fathony Maulana</p>
+              <span class="division">TQA & UI/UX Designer</span>
+            </div>
+          </div>
+          <div class="wrapper">
+            <p>Download CV</p>
+            <button class="menu" onclick="window.open('./assets/resume-example.pdf')">
+              <i class="bi bi-arrow-right"></i>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    #SERVICES-MINI-INFO
+  -->
+    <div class="services-mini-info">
+      <p>Brand Identity Design</p>
+      <p>Website Design</p>
+      <p>Product Design</p>
+      <p>Web Development</p>
+    </div>
+    <!-- 
+    #SECTION-ABOUT
+  -->
+    <section id="about">
+      <div class="title reveal">
+        <h1>About</h1>
+      </div>
+      <div class="info-container">
+        <div class="left-info reveal">
+          <span>My values</span>
+          <ul class="values-list">
+            <li>
+              <p class="text">Mutual respect</p>
+            </li>
+            <li>
+              <p class="text">Individuals equality</p>
+            </li>
+            <li>
+              <p class="text">Teamwork mindset</p>
+            </li>
+            <li>
+              <p class="text">Team growth</p>
+            </li>
+            <li>
+              <p class="text">Chaos elimination</p>
+            </li>
+          </ul>
+        </div>
+        <div class="border-center"></div>
+        <div class="right-info reveal">
+          <div class="text">
+            <p>Folks that are coming from a</p>
+            <p>variety of backgrounds and with</p>
+            <p>its own story. Team of united by</p>
+            <p>its commitment to delivering the</p>
+            <p>what is best.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="jumbotron-profile" style="padding: 80px 0px;">
+      <img class="reveal" src="./assets/profile-picture.png" alt="">
+      <div class="quotes">
+        <p>" The best part is the friendly and respectful</p>
+        <p>approach which has helped us to build strong,</p>
+        <p>long-lasting relationships with each other. "</p>
+      </div>
+    </div>
+    <div class="intro reveal">
+      <span>Intro</span>
+      <div class="big-text">
+        <p>I'm Fathony Maulana</p>
+        <p>(Tony) from Indonesia.</p>
+        <p>I’ve worked in an Indonesian</p>
+        <p>company as a Tester Quality</p>
+        <p>Assurance for 3 years since </p>
+        <p>2019. Then I decided to</p>
+        <p>continue my career as a</p>
+        <p>UI/UX Designer and now</p>
+        <p>I’m looking forward to</p>
+        <p>collaborating with you!</p>
+      </div>
+    </div>
+    <!-- 
+    #SECTION-EXPERIENCE
+  -->
+    <section id="experience">
+      <div class="title reveal">
+        <h1>Experience</h1>
+      </div>
+      <div class="info-container exp-info-container">
+        <div class="left-info reveal">
+          <div class="countdown">
+            <h1>
+              <script>
+                var date1, date2;
+                //define two date object variables with dates inside it  
+                date1 = new Date();
+                date2 = new Date("Dec 01, 2022, 21:45:10");
+
+                //calculate total number of seconds between two dates  
+                var total_seconds = Math.abs(date2 - date1) / 1000;
+
+                //calculate days difference by dividing total seconds in a day  
+                var days_difference = Math.floor(total_seconds / (60 * 60 * 24));
+
+                document.write(days_difference + " days");
+              </script>
+            </h1>
+            <div class="until-days">
+              <p>in business since December 1st 2022.</p>
+              <p>I’ve started in pandemic time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-center"></div>
+        <div class="right-info reveal">
+          <div class="text">
+            <p>I like to do things big-picture</p>
+            <p>around here. That way, I can</p>
+            <p>work hand-in-hand with clients to</p>
+            <p>get killer results that'll knock their</p>
+            <p>socks off.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="clients-title reveal">
+      <p>Some of my clients:</p>
+    </div>
+    <div class="clients reveal">
+      <img class="bank-mandiri" src="./assets/Bank-Mandiri.png" alt="">
+      <img class="seafood-nakama" src="./assets/SN Logo (1).png" alt="">
+      <img class="belgareti" src="./assets/Belgareti.png" alt="">
+    </div>
+    <!-- 
+    #SECTION-SKILLS
+  -->
+    <section id="skills">
+      <div class="title reveal">
+        <h1>My skills</h1>
+      </div>
+      <div class="info-container">
+        <div class="left-info reveal">
+          <div class="skills">
+            <div class="skill-1">
+              <span>UI/UX Design</span>
+              <ul class="values-list">
+                <li>
+                  <p class="text">HTML</p>
+                </li>
+                <li>
+                  <p class="text">CSS</p>
+                </li>
+                <li>
+                  <p class="text">SASS/SCSS</p>
+                </li>
+                <li>
+                  <p class="text">JavaScript</p>
+                </li>
+                <li>
+                  <p class="text">PHP</p>
+                </li>
+                <li>
+                  <p class="text">SQL Database</p>
+                </li>
+                <li>
+                  <p class="text">Figma</p>
+                </li>
+                <li>
+                  <p class="text">Photoshop</p>
+                </li>
+                <li>
+                  <p class="text">JSON</p>
+                </li>
+              </ul>
+            </div>
+            <div class="skill-2">
+              <span>Tester Quality Assurance</span>
+              <ul class="values-list">
+                <li>
+                  <p class="text">SDLC</p>
+                </li>
+                <li>
+                  <p class="text">STLC</p>
+                </li>
+                <li>
+                  <p class="text">Waterfall</p>
+                </li>
+                <li>
+                  <p class="text">Agile:Scrum</p>
+                </li>
+                <li>
+                  <p class="text">Reporting</p>
+                </li>
+                <li>
+                  <p class="text">Leadership</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border-center"></div>
+        <div class="right-info reveal">
+          <div class="text">
+            <p>My goal was to refresh the</p>
+            <p>company's brand identity</p>
+            <p>and translate its new visual values</p>
+            <p>into a brand new website.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+    #SECTION-PROJECTS
+  -->
+    <section id="projects">
+      <div class="title reveal">
+        <h1>Projects</h1>
+      </div>
+      <div class="info-container">
+        <div class="left-info reveal">
+          <div class="projects-info">
+            <div class="projects-wrapper">
+              <h1 class="project-summary">1</h1>
+              <p class="project-info">Completed projects</p>
+            </div>
+            <div class="projects-wrapper">
+              <h1 class="project-summary">1</h1>
+              <p class="project-info">Project on development</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-center"></div>
+        <div class="right-info reveal">
+          <div class="text">
+            <p>I've crushed it on lots of</p>
+            <p>projects, and I've got the receipts</p>
+            <p>to prove it in my big ol' portfolio of</p>
+            <p>case studies.</p>
+          </div>
+          <div class="profile-container">
+            <div class="wrapper">
+              <img src="./assets/profile-pic.png" alt="" width="50px" height="50px">
+              <div class="profile-detail">
+                <p class="fullname">Fathony Maulana</p>
+                <span class="division">TQA & UI/UX Designer</span>
+              </div>
+            </div>
+            <div class="wrapper">
+              <p>Discuss the project</p>
+              <div class="revealing" data-animation="to-right">
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281299056988&text=Hi, sorry to interrupt you. I'm [YourName] from [YourAddress] [YourRegion]. I've a new project recruting several candidate. Can you spare a few minutes?">
+                  <span style="font-size: 14px; font-weight: 500; color: #25D366;">Whatsapp</span>
+                  <span style="font-size: 26px; font-weight: 500; color: #25D366;">
+                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="jumbotron-project" style="padding: 80px 0px; margin-top: 80px;">
+      <div class="jumbotron-project-wrapper reveal square square-transition">
+        <div class="wrapper-left">
+          <h1 class="jumbotron-project-title">Seafood Nakama</h1>
+          <div class="jumbotron-project-desc">
+            <p>An innovative southeast asian F&B new retail that focuses on retail sustainable</p>
+            <p>and cost-effective seafood while minimizing environmental impacts.</p>
+          </div>
+
+        </div>
+        <div class="wrapper-right">
+          <div class="services-top">
+            <h2>2022</h2>
+          </div>
+          <div class="services-bottom">
+            <h2>Web Design</h2>
+            <h2>Web Development</h2>
+          </div>
+          <div class="wrapper">
+            <div class="revealing" data-animation="to-right">
+              <a href="">
+                <span style="font-size: 14px; color: white; font-weight: 500;">See the project</span>
+                <span style="font-size: 26px; color: white;">
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="intro website-section reveal">
+      <span>Website</span>
+      <div class="big-text">
+        <p>I have balanced a serious</p>
+        <p>look and feel and friendliness</p>
+        <p>to convey the professional</p>
+        <p>vibe of the company, yet</p>
+        <p>keeping it close to the people.</p>
+      </div>
+    </div>
+    <div class="intro big-quotes-container">
+      <div class="big-quotes reveal">
+        <p>Starting as enthusiasts <img src="./assets/img-1.png" alt=""></p>
+        <p>who wanted to make something</p>
+        <p>truly great for other people,</p>
+        <p>I combined my professional</p>
+        <p>skills <img src="./assets/img-2.png" alt=""></p>
+        <p>and empathy</p>
+        <p>to create a unique <img src="./assets/img-3.png" alt=""></p>
+        <p>collaborative environment.</p>
+      </div>
+    </div>
+    <!-- 
+    #SECTION-TESTIMONIALS
+  -->
+    <section id="testimonials">
+      <div class="title reveal">
+        <h1>Testimonials</h1>
+      </div>
+      <div class="info-container">
+        <div class="left-info reveal">
+          <div class="projects-info">
+            <div class="projects-wrapper">
+              <h1 class="project-summary">2</h1>
+              <p class="project-info">verified reviews</p>
+            </div>
+            <div class="projects-wrapper">
+              <h1 class="project-summary">5.0</h1>
+              <p class="project-info">average rating</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-center"></div>
+        <div class="right-info reveal">
+          <div class="text">
+            <p>A satisfied client is the best</p>
+            <p>indicator of collaboration</p>
+            <p>success and approach to a project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="testimonials-card-container reveal">
+      <div class="testimonials-card card-intro">
+        <div class="top-wrapper intro-top-wrapper">
+          <img src="./assets/Logo-white.png" alt="" width="100px" height="100px">
+          <div class="big-stars">
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+          </div>
+        </div>
+        <div class="bot-wrapper">
+          <img src="./assets/Logo-white.png" alt="" width="35px" height="35px">
+          <div class="reviews-sum">
+            <p>2 reviews</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-card card-reviews">
+        <div class="top-wrapper">
+          <img src="./assets/Logo.png" alt="" width="35px" height="35px">
+          <div class="stars">
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+          </div>
+          <div class="rate">
+            <p>5.0</p>
+          </div>
+        </div>
+        <div class="bot-info-wrapper">
+          <div class="testimoni">
+            <p>We were blown away by his
+              attention to detail and commitment to making sure the website was up to our standards.</p>
+          </div>
+          <div class="client-profile">
+            <p class="name">El Iddris</p>
+            <p class="division-and-company">Co-Founder and Chief Executive Officer at Seafood Nakama</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-card card-reviews">
+        <div class="top-wrapper">
+          <img src="./assets/Logo.png" alt="" width="35px" height="35px">
+          <div class="stars">
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+            <p><i class="bi bi-star-fill"></i></p>
+          </div>
+          <div class="rate">
+            <p>5.0</p>
+          </div>
+        </div>
+        <div class="bot-info-wrapper">
+          <div class="testimoni">
+            <p>It was a pleasure combining different yet close design directions to bring something truly fresh.</p>
+          </div>
+          <div class="client-profile">
+            <p class="name">Arief Putra P.</p>
+            <p class="division-and-company">Co-Founder and Chief Marketing Officer at Seafood Nakama</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    #SECTION-SERVICES
+  -->
+    <section id="services">
+      <div class="title reveal">
+        <h1>Services</h1>
+      </div>
+      <div class="services-info-container reveal">
+        <div class="services">
+          <div class="info-wrapper">
+            <div class="info-title">
+              <p>Brand Identity</p>
+            </div>
+            <div class="desc">
+              <p>Timeless and memorable brand identity that help</p>
+              <p>businesses establish a strong and consistent presence</p>
+              <p>in the market.</p>
+            </div>
+          </div>
+          <div class="info-wrapper">
+            <div class="info-title">
+              <p>Product Design</p>
+            </div>
+            <div class="desc">
+              <p>Innovative and functional product designs that makes</p>
+              <p>businesses and organizations to conquer their </p>
+              <p>markets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="services">
+          <div class="info-wrapper">
+            <div class="info-title">
+              <p>Website Design</p>
+            </div>
+            <div class="desc">
+              <p>A wide range of website experiences, including promo,</p>
+              <p>landings, marketing, portfolio, and corporate sites.</p>
+            </div>
+          </div>
+          <div class="info-wrapper">
+            <div class="info-title">
+              <p>Web Development</p>
+            </div>
+            <div class="desc">
+              <p>Jamstack development for large, custom-made</p>
+              <p>projects. No-code solution for smaller and faster TTM</p>
+              <p>sites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+    #SECTION-CONTACT
+  -->
+    <section id="contact">
+      <div class="title reveal">
+        <h1>Let's just</h1>
+        <h1>make it together!</h1>
+      </div>
+      <div class="profile-container contact-profile">
+        <div class="wrapper">
+          <img src="./assets/profile-pic.png" alt="" width="50px" height="50px">
+          <div class="profile-detail">
+            <p class="fullname">Fathony Maulana</p>
+            <span class="division">TQA & UI/UX Designer</span>
+          </div>
+        </div>
+        <div class="wrapper">
+          <p>Discuss the project</p>
+          <div class="revealing" data-animation="to-right">
+            <a
+              href="https://api.whatsapp.com/send?phone=6281299056988&text=Hi, sorry to interrupt you. I'm [YourName] from [YourAddress] [YourRegion]. I've a new project recruting several candidate. Can you spare a few minutes?">
+              <span style="font-size: 14px; font-weight: 500; color: #25D366;">Whatsapp</span>
+              <span style="font-size: 26px; font-weight: 500; color: #25D366;">
+                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+    #FOOTER
+  -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./assets/Logo.png" alt="" width="35px" height="35px">
+          <p>Fathony Maulana</p>
+        </div>
+        <div class="footer-wrapper">
+          <div class="footer-title-wrapper">
+            <h1 class="footer-title">I would love to</h1>
+            <h1 class="footer-title">hear from you.</h1>
+          </div>
+          <p class="footer-info">Feel free to reach out if you want to collaborate with me, or simply have a chat.</p>
+          <p class="footer-info">Don’t like the forms? Drop me a line via email. <a
+              href="mailto:maulanafathony@gmail.com">maulanafathony@gmail.com</a></p>
+          <p class="footer-info">© Fathony Maulana <span id="currentYear" style="color: black;"></span>. All rights reserved • <a href=""
+              style="font-weight: 600;">Privacy Policy</a></p>
+        </div>
+      </div>
+      <div class="services-info-container reveal">
+        <div class="services">
+          <div class="info-wrapper">
+            <div class="info-title footer-info-title">
+              <p>My address</p>
+            </div>
+            <div class="desc">
+              <p>Apartemen Bassura City Tower C, RT.8/RW.10,</p>
+              <p>South Cipinang Besar, </p>
+              <p>in the market. Jatinegara, East Jakarta City,</p>
+              <p>Jakarta 13410, Indonesia</p>
+            </div>
+          </div>
+          <div class="info-wrapper">
+            <div class="info-title footer-info-title">
+              <p>Follow me</p>
+            </div>
+            <div class="desc social-list">
+              <p><a href="https://www.linkedin.com/in/fathony-maulana-96a2a71ba/">LinkedIn</a> <i class="bi bi-arrow-up-right"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="services">
+          <div class="info-wrapper">
+            <div class="info-title footer-info-title">
+              <p>Whatsapp</p>
+            </div>
+            <div class="desc">
+              <p><a
+                  href="https://api.whatsapp.com/send?phone=6281299056988&text=Hi, sorry to interrupt you. I'm [YourName] from [YourAddress] [YourRegion]. I've a new project recruting several candidate. Can you spare a few minutes?">+62
+                  812 9905 6988</a> <i class="bi bi-arrow-up-right"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/toggleMenu.js"></script>
+  <script src="./js/copyright.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/reveal.js"></script>
+  <script src="./js/dayjs.js"></script>
+  <script src="./js/reloadPage.js"></script>
+  <script src="./js/preloader.js"></script>
+  <!-- <script src="./js/butter.js"></script> -->
+</body>
+
+</html>
