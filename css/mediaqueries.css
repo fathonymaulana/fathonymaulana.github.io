@@ -4,6 +4,18 @@
   .jumbotron-project {
     background-position: -300px;
   }
+
+  /* ----------------------------------------------  */
+  /* SECTION-SERVICES */
+  /* ----------------------------------------------  */
+  #services {
+    flex-direction: column;
+  }
+
+  .services {
+    justify-content: space-around;
+
+  }
 }
 
 @media screen and (max-width: 1200px) {
