@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home-styles.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="shortcut icon" href="./assets/favicon-2.svg" type="image/x-icon">
+    <title>SENA:Seafood Nakama</title>
+</head>
+
+<body>
+    <!-- 
+    #PRELOADER 
+  -->
+    <div class="preload" data-preload>
+        <div class="container">
+            <div class="circle"></div>
+            <img src="./assets/logo-4.png" alt="" width="30px">
+        </div>
+    </div>
+    <nav class="nav-desktop">
+        <a class="logo" href="homePage.html"><img src="./assets/logo-desktop.png" alt="" width="100px"></a>
+        <a class="logo-mobile" href="homePage.html"><img src="./assets/logo-mobile.png" alt="" width="50px"></a>
+        <div class="menu-link">
+            <li><a class="menu-item" href="homePage.html">HOME</a></li>
+            <li><a class="menu-item" href="menuPage.html">MENU</a></li>
+            <li><a class="menu-item" href="aboutPage.html"><b>ABOUT</b></a></li>
+            <li><a class="menu-item" href="contactPage.html">CONTACT</a></li>
+            <li><a class="insta" href="https://www.instagram.com/seafoodnakama/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
+        </div>
+    </nav>
+    <nav class="nav-mobile">
+        <img src="./assets/logo-mobile.png" alt="" width="50px">
+        <div class="hamburger" onclick="toggleMenu()"><i class="bi bi-list"></i></div>
+    </nav>
+    <nav class="nav-link-mobile">
+        <div class="close" onclick="toggleMenu()"><i class="bi bi-x-lg"></i></div>
+        <p class="nav-title">SENA:SEAFOOD NAKAMA</p>
+        <div class="menu-list">
+            <li><a class="menu-item" href="homePage.html">HOME</a></li>
+            <li><a class="menu-item" href="menuPage.html">MENU</a></li>
+            <li><a class="menu-item" href="aboutPage.html"><b>ABOUT</b></a></li>
+            <li><a class="menu-item" href="contactPage.html">CONTACT</a></li>
+        </div>
+        <div class="btn">
+            <a href="contactPage.html">OPENING HOURS</a>
+        </div>
+        <div class="btn">
+            <a href="https://api.whatsapp.com/send?phone=6285716544661" target="_blank" rel="noopener noreferrer">PRE:ORDER via WHATSAPP</a>
+        </div>
+        <div class="socials-lang">
+            <div class="socials">
+                <a class="insta" href="https://www.instagram.com/seafoodnakama/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                <a class="insta" href="404Page.html"><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="language">
+                <a class="ina" href="">INA</a>
+                <p style="color: rgba(0,0,0,0.5);">/</p>
+                <a class="en" href="" style="color: rgba(0,0,0);"><b>EN</b></a>
+            </div>
+        </div>
+        <p class="copyright">copyright © SEAFOOD NAKAMA <span id="currentYear" style="color: black;"></span>. All rights reserved •</p>
+        <div class="nav-info">
+            <a href="">Privacy Policy</a>
+            <p>|</p>
+            <a href="">Terms of use</a>
+            <p>|</p>
+            <a href="">Legal</a>
+        </div>
+    </nav>
+    <div class="overlay" data-nav-toggler data-overlay></div>
+    <div class="hero">
+        <img src="./assets/plato2.jpg" alt="">
+    </div>
+    <section class="detail-container" data-page>
+        <h1 class="title">ABOUT</h1>
+        <div class="detail-list-container">
+            <h3 class="detail-title">SEAFOOD NAKAMA?</h3>
+            <div class="detail-list-desc">
+                <p class="detail-info">Overlooking on the SCBD Jakarta sits a cozy Seafood restaurant. For over 1 years, Seafood Nakama has been serving up fresh dishes, like seafood, house made sauce & home style cooking, as well as delicious variations on the classics.</p>
+                <br>
+                <p class="detail-info">The idea for Seafood Nakama started because the founders had a mission to spread their love for Indonesian seafood as a local brand from Indonesia throughout the world.</p>
+                <br>
+                <p class="detail-info">We start operations in 2022.</p>
+            </div>
+        </div>
+        <div class="detail-list-container">
+            <h3 class="detail-title">OUR LEADERSHIP</h3>
+            <div class="detail-list-person">
+                <div class="person">
+                    <p class="leader-name">EL IDDRIS</p>
+                    <p class="leader-division">Co-Founder and Chief Executive Officer</p>
+                </div>
+                <div class="person">
+                    <p class="leader-name">HAIKAL REYNALDI</p>
+                    <p class="leader-division">Co-Founder and Chief Business Development Officer</p>
+                </div>
+                <div class="person last-person">
+                    <p class="leader-name">ARIEF PUTRA PERMANA</p>
+                    <p class="leader-division">Co-Founder and Chief Marketing Officer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="active">
+        <div class="info left">
+            <p class="info-title">WE'RE OPEN</p>
+            <a class="info-link" href="contactPage.html">OPENING HOURS</a>
+        </div>
+        <div class="info right">
+            <p class="info-title">BEAT THE QUEUE</p>
+            <a class="info-link" href="https://api.whatsapp.com/send?phone=6285716544661" target="_blank" rel="noopener noreferrer">PRE:ORDER</a>
+        </div>
+    </footer>
+    <script src="./js/copyright.js"></script>
+    <script src="./js/reloadPage.js"></script>
+    <script src="./js/preloader.js"></script>
+    <script src="./js/toggleMenu.js"></script>
+    <style>
+        @media screen and (max-width: 1400px) {}
+
+        @media screen and (max-width: 1200px) {}
+
+        @media screen and (max-width: 800px) {
+            .nav-desktop {
+                display: none;
+            }
+
+            .nav-mobile {
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: 435px) {}
+
+        @media screen and (max-width: 375px) {}
+    </style>
+</body>
+
+</html>

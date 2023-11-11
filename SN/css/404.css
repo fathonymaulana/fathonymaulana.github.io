@@ -1,0 +1,76 @@
+/* 
+| ----------------------------------------------
+| FONTSTYLE
+| ---------------------------------------------- 
+*/
+@font-face {
+    font-family: 'MyFont-Regular';
+    src: url('../../fonts/SF-Pro-Rounded-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont-Display';
+    src: url('../../fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyFont-Light';
+    src: url('../../fonts/SF-Pro-Display-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*======================
+    404 page
+=======================*/
+
+
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'MyFont-Display', serif;
+}
+
+.page_404 img {
+    width: 100%;
+}
+
+.four_zero_four_bg {
+
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    background-repeat: repeat-y;
+    height: 400px;
+    background-position: center;
+}
+
+
+.four_zero_four_bg h1 {
+    font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+.link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: black;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.contant_box_404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
