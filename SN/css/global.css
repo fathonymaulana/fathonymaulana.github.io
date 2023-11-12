@@ -432,6 +432,17 @@ footer.active {
 
 @media screen and (max-width: 1200px) {}
 
+@media screen and (max-width: 1000px) {
+    .detail-list-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .btn {
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+    }
 @media screen and (max-width: 800px) {
     .nav-desktop {
         display: none;
@@ -476,17 +487,6 @@ footer.active {
     .detail-container {
         gap: 60px;
         padding: 100px 30px 0px 30px;
-    }
-
-    .detail-list-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .btn {
-        text-align: center;
-        font-size: 12px;
-        width: 100%;
     }
 
     footer {
