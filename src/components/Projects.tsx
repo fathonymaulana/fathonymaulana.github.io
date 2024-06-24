@@ -4,38 +4,35 @@ import React from "react";
 const projects = [
   {
     id: 1,
-    title: "TITLE HERE",
+    title: "Dapur Nakama",
     subtitle:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla iure molestias numquam,",
-    img: "/images/phone.png",
-    darkImg: "/images/dark-phone.png",
+    img: "/images/1.png",
   },
   {
     id: 2,
-    title: "TITLE HERE",
+    title: "N-Aquatic",
     subtitle:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla iure molestias numquam,",
-    img: "/images/phone.png",
-    darkImg: "/images/dark-phone.png",
+    img: "/images/2.png",
   },
   {
     id: 3,
-    title: "TITLE HERE",
+    title: "Ajaib",
     subtitle:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla iure molestias numquam,",
-    img: "/images/phone.png",
-    darkImg: "/images/dark-phone.png",
+    img: "/images/3.png",
   },
 ];
 
 const Projects = () => {
   return (
-    <section>
+    <section className="border-t border-gray-200 py-0 dark:border-gray-700">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-8 sm:gap-12 lg:px-20 lg:pt-24">
         <div className="flex flex-col items-center gap-4 sm:gap-4">
           <span className="text-sm text-primary font-semibold">Projects</span>
-          <h2 className="text-3xl font-semibold tracking-tight text-gray-900 lg:text-4xl dark:text-white">
-            Showcase of my frontend related work
+          <h2 className="text-3xl font-semibold text-center tracking-tight text-gray-900 lg:text-4xl dark:text-white">
+            All about my freelance and professional work experience.
           </h2>
           <p className="mx-auto max-w-3xl text-center text-lg font-normal text-gray-500 dark:text-gray-400">
             Explore the entire collection of projects created with
@@ -59,11 +56,8 @@ const Projects = () => {
                 </span>
               </div>
               <div className="flex h-52 items-center justify-center">
-                <div className="relative h-4/6 dark:hidden w-36">
+                <div className="relative h-full w-full bg-cover dark:hidden">
                   <img src={project.img} alt="project image" />
-                </div>
-                <div className="relative hidden h-4/6 dark:block w-36">
-                  <img src={project.darkImg} alt="project dark image" />
                 </div>
               </div>
             </a>
