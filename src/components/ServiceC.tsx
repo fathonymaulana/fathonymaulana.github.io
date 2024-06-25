@@ -20,8 +20,8 @@ const ServiceC = () => {
             </div>
             <div className="flex flex-col items-center gap-4 dark:text-gray-400">
               <p className="self-stretch">
-                Check out the following resources to learn more about Flowbite
-                Figma:
+                Check out the following resources to learn more about My
+                Personal Portfolio using Figma:
               </p>
               <div className="isolate flex flex-col items-start gap-4 self-stretch">
                 <a

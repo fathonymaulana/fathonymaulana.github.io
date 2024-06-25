@@ -55,7 +55,7 @@ const Footer = () => {
                 src="/images/Current-logo.png"
               />
               <span className="text-xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight">
-                Tony<span className="text-primary">dev</span>
+                Tony<span className="text-primary"> Portfolio</span>
               </span>
             </a>
             <p className="mb-3 mt-4 max-w-sm text-gray-600 dark:text-gray-400">

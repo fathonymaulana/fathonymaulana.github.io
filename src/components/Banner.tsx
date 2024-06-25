@@ -20,7 +20,7 @@ const Banner = () => {
                 href="mailto:maulanafathony@gmail.com"
                 className=" hover:bg-primary border-2 rounded-lg text-primary inline-flex items-center py-3 px-5 bg-white  border-white hover:border-white hover:text-white"
               >
-                Contact Now
+                Contact Me
               </a>
               <a
                 target="_blank"

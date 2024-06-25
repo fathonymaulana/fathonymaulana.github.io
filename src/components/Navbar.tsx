@@ -48,7 +48,7 @@ const Navbar = () => {
                 src="/images/Current-logo.png"
               />
               <span className="tracking-tight">
-                Tony<span className="text-primary">dev</span>
+                Tony<span className="text-primary"> Portfolio</span>
               </span>
             </a>
           </div>
