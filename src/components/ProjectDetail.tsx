@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
-import ProjectTag from "@/components/ProjectTag";
 
 const projectsData = [
   {
@@ -32,13 +31,7 @@ const projectsData = [
 ];
 
 const ProjectDetail = () => {
-  const [tag, setTag] = useState("All");
-  const handleTagChange = (newTag) => {
-    setTag(newTag);
-  };
-  const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
-  );
+
   return (
     <div className="w-full min-w-0">
       <div className="flex">
@@ -64,25 +57,8 @@ const ProjectDetail = () => {
                     React, Flowbite, and Tailwind CSS
                   </span>
                 </p>
-                <div className="mt-8 flex flex-row justify-start gap-8 border-b border-gray-200">
-                  <ProjectTag
-                    onClick={handleTagChange}
-                    tag="All"
-                    isSelected={tag === "All"}
-                  />
-                  <ProjectTag
-                    onClick={handleTagChange}
-                    tag="Web"
-                    isSelected={tag === "Web"}
-                  />
-                  <ProjectTag
-                    onClick={handleTagChange}
-                    tag="Mobile"
-                    isSelected={tag === "Mobile"}
-                  />
-                </div>
-                <div className="grid grid-cols-1 items-center justify-center gap-4 sm:grid-cols-2 sm:gap-8 xl:grid-cols-3 mt-8">
-                  {filteredProjects.map((project) => (
+                <div className="grid grid-cols-1 items-center justify-center gap-4 sm:grid-cols-2 sm:gap-8 xl:grid-cols-3 mt-12">
+                  {projectsData.map((project) => (
                     <a
                       href="/"
                       className="flex flex-col rounded-lg border overflow-hidden border-gray-200 bg-white p-0 text-gray-500 shadow-none hover:border-gray-300 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:shadow-lg-light"

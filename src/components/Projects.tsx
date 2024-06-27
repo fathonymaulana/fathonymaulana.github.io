@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
-import ProjectTag from "./ProjectTag";
 
 const projectsData = [
   {
@@ -32,13 +31,6 @@ const projectsData = [
 ];
 
 const Projects = () => {
-  const [tag, setTag] = useState("All");
-  const handleTagChange = (newTag) => {
-    setTag(newTag);
-  };
-  const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
-  );
 
   return (
     <section className="border-t border-gray-200 py-0 dark:border-gray-700">
@@ -55,25 +47,8 @@ const Projects = () => {
             </span>
           </p>
         </div>
-        <div className="flex flex-row justify-center gap-8 border-b border-gray-200">
-          <ProjectTag
-            onClick={handleTagChange}
-            tag="All"
-            isSelected={tag === "All"}
-          />
-          <ProjectTag
-            onClick={handleTagChange}
-            tag="Web"
-            isSelected={tag === "Web"}
-          />
-          <ProjectTag
-            onClick={handleTagChange}
-            tag="Mobile"
-            isSelected={tag === "Mobile"}
-          />
-        </div>
         <div className="grid grid-cols-1 items-center justify-center gap-4 sm:grid-cols-2 sm:gap-8 xl:grid-cols-3">
-          {filteredProjects.map((project) => (
+          {projectsData.map((project) => (
             <a
               href="/"
               className="flex flex-col rounded-lg border overflow-hidden border-gray-200 bg-white p-0 text-gray-500 shadow-none hover:border-gray-300 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:shadow-lg-light"

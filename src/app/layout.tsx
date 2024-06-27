@@ -23,7 +23,7 @@ export default function RootLayout({
         <div className="w-full min-w-0 flex-auto">
           <div className="relative">
             <div className="font-poppins flex min-h-screen flex-col">
-              {/* <Header /> */}
+              <Header />
               <Navbar />
               <main>{children}</main>
               <Footer />

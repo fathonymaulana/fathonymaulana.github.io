@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 
 const SidebarNav = () => {
   return (
-    <Sidebar aria-label="Sidebar with multi-level dropdown example" className="fixed top-16 left-0 border-r border-gray-200 dark:border-gray-600">
+    <Sidebar aria-label="Sidebar with multi-level dropdown example" className="border-r border-gray-200 dark:border-gray-600">
       <Sidebar.Items>
         <Sidebar.ItemGroup>
           <Sidebar.Collapse
