@@ -51,7 +51,7 @@ const Contact = () => {
                   I appreciate your understanding in using this responsibly.
                 </p>
                 <table className="table-auto my-10 border dark:border-gray-600">
-                  <thead className="bg-gray-50 dark:bg-gray-600 text-left dark:text-white">
+                  <thead className="bg-gray-100 dark:bg-gray-600 text-left dark:text-white">
                     <tr>
                       <th className="p-4">Contact</th>
                       <th className="p-4">Detail</th>
@@ -114,7 +114,7 @@ const Contact = () => {
                   social media platforms I use most frequently below.
                 </p>
                 <table className="table-auto my-10 border dark:border-gray-400">
-                  <thead className="bg-gray-50 dark:bg-gray-600 text-left dark:text-white">
+                  <thead className="bg-gray-100 dark:bg-gray-600 text-left dark:text-white">
                     <tr>
                       <th className="p-4">Social Media</th>
                       <th className="p-4">Profile URL</th>

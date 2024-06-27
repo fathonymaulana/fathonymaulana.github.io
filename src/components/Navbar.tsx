@@ -26,7 +26,7 @@ const menus = [
 const Navbar = () => {
   return (
     <>
-      <nav className="sticky top-0 z-50 mx-auto flex w-full items-center justify-between border-b border-gray-200 bg-white py-0 text-gray-500 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400">
+      <nav className="relative sticky top-0 z-50 mx-auto flex w-full items-center justify-between border-b border-gray-200 bg-white py-0 text-gray-500 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400">
         <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between px-4 py-2.5 xl:max-w-8xl xl:px-20 container">
           <div className="flex items-center gap-3">
             <a href="/" className="sr-only">
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </li>
               ))}
             </div>
-            <div className="flex items-center gap-1 text-sm">
+            <div className="md:flex items-center gap-1 text-sm hidden">
               <Tooltip content="Ask on Discord" className="w-fit">
                 <Link
                   href="#"

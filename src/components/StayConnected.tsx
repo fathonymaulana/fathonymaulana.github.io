@@ -6,7 +6,6 @@ const StayConnected = () => {
     <section className="border-t bg-white border-gray-200 py-0 dark:border-gray-700">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-8 sm:gap-12 lg:px-20 lg:pt-24 lg:pb-24">
         <div className="flex flex-col items-center gap-4 sm:gap-4">
-          <span className="text-sm text-primary font-semibold">Projects</span>
           <h2 className="text-3xl font-semibold text-center tracking-tight text-gray-900 lg:text-4xl dark:text-white">
             Stay Connected
           </h2>
@@ -15,7 +14,7 @@ const StayConnected = () => {
             the latest updates. Let's keep in touch and collaborate on exciting
             new projects!
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-8 my-8">
             <img
               src="/images/avatar/Ellipse 1.png"
               alt="Tools Stack"

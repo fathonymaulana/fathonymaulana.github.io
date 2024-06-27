@@ -33,7 +33,7 @@ const Hero = () => {
                   <a
                     rel="noopener noreferrer "
                     className=" text-primary hover:bg-primary hover:text-white rounded-lg py-3 px-5 border-2  md:inline-flex items-center hidden sm:block border-primary "
-                    href="https://app.jala.tech"
+                    href="Introduction"
                   >
                     Get Started
                     <svg

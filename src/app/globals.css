@@ -23,6 +23,11 @@ body {
   background: #F9FAFB;
 }
 
+::selection {
+  background-color: #06C755;
+  color: white;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -1,40 +1,36 @@
+"use client";
 import React from "react";
+import { Banner } from "flowbite-react";
+import { HiX } from "react-icons/hi";
 
 const Header = () => {
   return (
-    <div
-      className="z-50 hidden w-full justify-center border border-gray-200 bg-gray-50 px-4 py-3 lg:flex lg:py-4 dark:border-gray-600 dark:bg-gray-700"
-    >
-      <div className="items-center md:flex">
-        <p className="text-sm font-medium text-gray-900 md:my-0 dark:text-white">
-          <span className="mr-2 hidden rounded bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-800 md:inline dark:bg-emerald-200 dark:text-emerald-800">
-            New
-          </span>
-          Tony has just launched his newest E-Commerce project!
-          <a
-            className="ml-2 inline-flex items-center text-sm font-medium text-primary hover:underline md:ml-2 dark:text-emerald-500"
-            href="/docs/getting-started/server-components"
-          >
-            Check it out
-            <svg
-              className="ml-1.5 size-3 text-primary dark:text-emerald-500"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              ></path>
-            </svg>
-          </a>
-        </p>
+    <Banner>
+      <div className="flex w-full justify-between border-b border-gray-200 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-700">
+        <div className="mx-auto flex items-center">
+          <p className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
+            <span className="mr-2 hidden rounded bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-800 md:inline dark:bg-emerald-200 dark:text-emerald-800">
+              New
+            </span>
+            <span className="[&_p]:inline">
+              Tony has just launched his newest E-Commerce project!&nbsp;
+              <a
+                href="Projects"
+                className="inline font-medium text-primary underline decoration-solid underline-offset-2 hover:no-underline dark:text-primary"
+              >
+                Check it out
+              </a>
+            </span>
+          </p>
+        </div>
+        <Banner.CollapseButton
+          color="gray"
+          className="border-0 bg-transparent text-gray-500 dark:text-gray-400"
+        >
+          <HiX className="h-4 w-4" />
+        </Banner.CollapseButton>
       </div>
-    </div>
+    </Banner>
   );
 };
 
