@@ -34,7 +34,6 @@ const helpSupport = [
     href: "https://wa.me/6281299056988",
     text: "Whatsapp",
   },
-  
 ];
 
 const Footer = () => {
@@ -67,7 +66,7 @@ const Footer = () => {
             <p className="mb-3 mt-4 max-w-sm text-gray-600 dark:text-gray-400 flex items-center gap-1">
               Code licensed
               <a
-                href="https://github.com/fathonymaulana/fathonymaulana.github.io/blob/main/LICENSE.txt"
+                href="https://github.com/fathonymaulana/fathonymaulana.github.io/blob/main/MIT-LICENSE.txt"
                 className="text-primary hover:underline"
                 target="_blank"
               >
@@ -117,11 +116,28 @@ const Footer = () => {
           data-testid="footer-divider"
           className="my-6 w-full border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8"
         ></hr>
-        <div className="w-full text-center sm:flex sm:items-center sm:justify-center">
-          <div className="text-gray-500 dark:text-gray-400 sm:text-center text-base">
-            © 2024
-            <a href="/" className="ml-1 hover:underline">
-              All Rights Reserved. Tonydev™ is a registered trademark.
+        <div className="text-gray-500 dark:text-gray-400 text-base flex flex-col-reverse md:flex-row md:justify-between gap-4">
+          <div className="w-full md:w-2/3 text-center md:text-left flex flex-col gap-4">
+            <small>
+              Copyright © 2012-2024 Tony Portfolio, LLC. All Rights Reserved
+              Constitution. The Tony Portfolio wordmark is a trademark
+              registered from Tony Portfolio Operating Company, LLC in the US
+              and other countries. The “Tony” logo is a registered trademark of
+              fathonymaulanagithubio-fathony-maulanas-projects.vercel.app, LLC
+              in the US.
+            </small>
+            <small>
+              Penggunaan Situs ini tunduk pada ketentuan Penggunaan. Dengan
+              menggunakan situs ini, Anda menegaskan bahwa Anda setuju untuk
+              tunduk pada Ketentuan Layanan Universal.
+            </small>
+          </div>
+          <div className="flex flex-row mt-4 mb-8 md:mb-0 md:mt-1 gap-8">
+            <a href="#" className="text-xs hover:underline">
+              Privacy policy
+            </a>
+            <a href="#" className="text-xs hover:underline">
+              Cookie
             </a>
           </div>
         </div>

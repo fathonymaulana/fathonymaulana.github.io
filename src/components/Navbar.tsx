@@ -29,9 +29,6 @@ const Navbar = () => {
       <nav className="sticky top-0 z-50 mx-auto flex w-full items-center justify-between border-b border-gray-200 bg-white py-0 text-gray-500 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400">
         <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between px-4 py-2.5 xl:max-w-8xl xl:px-20 container">
           <div className="flex items-center gap-3">
-            <a href="/" className="sr-only">
-              Tony<span className="text-emerald-800">dev</span>
-            </a>
             <a
               aria-hidden="true"
               className="flex items-center gap-3 text-2xl font-semibold text-gray-900 dark:text-white"
@@ -47,7 +44,7 @@ const Navbar = () => {
                 data-nimg="1"
                 src="/images/Current-logo.png"
               />
-              <span className="tracking-tight">
+              <span className="tracking-tighter font-bold">
                 Tony<span className="text-primary"> Portfolio</span>
               </span>
             </a>

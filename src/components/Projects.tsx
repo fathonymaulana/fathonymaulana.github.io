@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const projectsData = [
   {
@@ -31,10 +32,9 @@ const projectsData = [
 ];
 
 const Projects = () => {
-
   return (
     <section className="border-t border-gray-200 py-0 dark:border-gray-700">
-      <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-8 sm:gap-12 lg:px-20 lg:pt-24">
+      <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-8 sm:gap-12 lg:px-20 lg:py-24">
         <div className="flex flex-col items-center gap-4 sm:gap-4">
           <span className="text-sm text-primary font-semibold">Projects</span>
           <h2 className="text-3xl font-semibold text-center tracking-tight text-gray-900 lg:text-4xl dark:text-white">
@@ -69,6 +69,17 @@ const Projects = () => {
               </div>
             </a>
           ))}
+        </div>
+        <div className="mb-4 flex w-full justify-center text-center">
+          <a
+            href="Projects"
+            type="button"
+            className="group relative flex items-stretch justify-center p-0.5 text-center font-medium transition-[color,background-color,border-color,text-decoration-color,fill,stroke,box-shadow] focus:z-10 focus:outline-none border border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-cyan-300 enabled:hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-600 dark:text-white dark:focus:ring-gray-700 dark:enabled:hover:border-gray-700 dark:enabled:hover:bg-gray-700 rounded-lg"
+          >
+            <span className="flex items-stretch transition-all duration-200 rounded-md px-4 py-2 text-sm">
+              View all components
+            </span>
+          </a>
         </div>
       </div>
     </section>
