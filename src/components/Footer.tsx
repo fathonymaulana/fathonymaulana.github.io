@@ -53,7 +53,7 @@ const Footer = () => {
                 data-nimg="1"
                 src="/images/Current-logo.png"
               />
-              <span className="tracking-tighter font-bold">
+              <span className="tracking-tighter font-extrabold">
                 Tony<span className="text-primary"> Portfolio</span>
               </span>
             </a>
