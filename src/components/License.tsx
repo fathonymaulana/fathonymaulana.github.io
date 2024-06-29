@@ -96,7 +96,7 @@ const License = () => {
             </a>
             <a
               className="ml-auto flex items-center justify-center text-right text-gray-500 transition-colors duration-200 hover:text-primary dark:text-gray-400 dark:hover:text-white"
-              href="#"
+              href="Figma"
             >
               Figma
               <svg

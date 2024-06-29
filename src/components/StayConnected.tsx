@@ -3,7 +3,7 @@ import React from "react";
 
 const StayConnected = () => {
   return (
-    <section className="border-t bg-white border-gray-200 py-0 dark:border-gray-700">
+    <section className="border-t border-gray-200 py-0 dark:border-gray-700">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-8 sm:gap-12 lg:px-20 lg:pt-24 lg:pb-24">
         <div className="flex flex-col items-center gap-4 sm:gap-4">
           <h2 className="text-3xl font-semibold text-center tracking-tight text-gray-900 lg:text-4xl dark:text-white">
@@ -158,8 +158,9 @@ const StayConnected = () => {
           </div>
           <div className="isolate flex flex-col items-start gap-4 self-stretch">
             <a
-              href=""
+              href="https://www.linkedin.com/in/fathony-maulana-96a2a71ba/"
               className="inline-flex max-full items-center justify-start gap-5 self-stretch rounded-lg border border-gray-300 bg-gray-50 px-4 py-3.5 text-center text-base font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 sm:gap-7 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+              target="_blank"
             >
               <img
                 src="https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png"
@@ -168,8 +169,8 @@ const StayConnected = () => {
                 className="w-8"
               />
               <div className="flex flex-col text-left">
-                <span className="font-bold text-xl">Connect to LinkedIn</span>
-                <p className="text-gray-600 dark:text-400 text-sm">
+                <span className="font-bold text-xl tracking-tighter">Connect to LinkedIn</span>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">
                   Build and engage with your professional network. Access
                   knowledge, insights and opportunities.
                 </p>

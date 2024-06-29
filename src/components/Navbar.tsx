@@ -3,6 +3,7 @@ import { ArrowRightIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import React from "react";
 import { Tooltip } from "flowbite-react";
+import ToggleMode from "./ToggleMode";
 
 const menus = [
   {
@@ -62,8 +63,8 @@ const Navbar = () => {
                 </li>
               ))}
             </div>
-            <div className="md:flex items-center gap-1 text-sm hidden">
-              <Tooltip content="Ask on Discord" className="w-fit">
+            <div className="flex items-center gap-1 text-sm">
+              <Tooltip content="Ask on Discord" className="w-fit h-fit">
                 <Link
                   href="#"
                   passHref
@@ -71,8 +72,6 @@ const Navbar = () => {
                 >
                   <button
                     type="button"
-                    aria-label="Toggle dark mode"
-                    data-testid="dark-theme-toggle"
                     className="rounded-lg p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                   >
                     <svg
@@ -92,7 +91,7 @@ const Navbar = () => {
                   </button>
                 </Link>
               </Tooltip>
-              <Tooltip content="View on Github" className="w-fit">
+              <Tooltip content="View on Github" className="w-fit h-fit">
                 <Link
                   href="https://github.com/fathonymaulana/fathonymaulana.github.io"
                   passHref
@@ -100,8 +99,6 @@ const Navbar = () => {
                 >
                   <button
                     type="button"
-                    aria-label="Toggle dark mode"
-                    data-testid="dark-theme-toggle"
                     className="rounded-lg p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                   >
                     <svg
@@ -119,6 +116,9 @@ const Navbar = () => {
                     </svg>
                   </button>
                 </Link>
+              </Tooltip>
+              <Tooltip content="Toggle dark mode" className="w-fit h-fit">
+                <ToggleMode />
               </Tooltip>
             </div>
           </div>

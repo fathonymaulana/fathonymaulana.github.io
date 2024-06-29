@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,16 +21,23 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="dark:bg-slate-800 font-poppins">
-        <div className="w-full min-w-0 flex-auto">
-          <div className="relative">
-            <div className="font-poppins flex min-h-screen flex-col">
-              <Header />
-              <Navbar />
-              <main>{children}</main>
-              <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="w-full min-w-0 flex-auto">
+            <div className="relative">
+              <div className="font-poppins flex min-h-screen flex-col">
+                <Header />
+                <Navbar />
+                <main>{children}</main>
+                <Footer />
+              </div>
             </div>
           </div>
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -203,10 +203,31 @@ const About = () => {
             aria-label="Previous and next page navigation"
           >
             <a
-              className="ml-auto flex items-center justify-center text-right text-gray-500 transition-colors duration-200 hover:text-primary dark:text-gray-400 dark:hover:text-white"
-              href="License"
+              className="mr-8 flex items-center justify-center text-gray-500 transition-colors duration-200 hover:text-primary dark:text-gray-400 dark:hover:text-white"
+              href="Figma"
             >
-              License
+              <svg
+                className="mr-2 size-3.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 5H1m0 0 4 4M1 5l4-4"
+                ></path>
+              </svg>
+              Figma
+            </a>
+            <a
+              className="ml-auto flex items-center justify-center text-right text-gray-500 transition-colors duration-200 hover:text-primary dark:text-gray-400 dark:hover:text-white"
+              href="Projects"
+            >
+              Projects
               <svg
                 className="ml-2 size-3.5"
                 aria-hidden="true"
@@ -216,9 +237,9 @@ const About = () => {
               >
                 <path
                   stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 ></path>
               </svg>

@@ -38,7 +38,7 @@ const helpSupport = [
 
 const Footer = () => {
   return (
-    <div className="w-full dark:bg-gray-800 md:flex md:items-center md:justify-between rounded-none bg-gray-50 pb-8 pt-16 shadow-none">
+    <div className="w-full dark:bg-gray-800 md:flex md:items-center md:justify-between rounded-none bg-gray-50 pb-8 pt-16 shadow-none border-t border-gray-200 dark:border-gray-600">
       <div className="mx-auto w-full max-w-6xl px-4 lg:px-20">
         <div className="grid w-full justify-between gap-8 md:grid-cols-2">
           <div className="mb-4 max-w-sm lg:mb-0">
@@ -53,7 +53,7 @@ const Footer = () => {
                 data-nimg="1"
                 src="/images/Current-logo.png"
               />
-              <span className="text-xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight">
+              <span className="tracking-tighter font-bold">
                 Tony<span className="text-primary"> Portfolio</span>
               </span>
             </a>
@@ -127,9 +127,9 @@ const Footer = () => {
               in the US.
             </small>
             <small>
-              Penggunaan Situs ini tunduk pada ketentuan Penggunaan. Dengan
-              menggunakan situs ini, Anda menegaskan bahwa Anda setuju untuk
-              tunduk pada Ketentuan Layanan Universal.
+              Use of this Site is subject to the terms of Use. By using this
+              site, you confirm that you agree to abide by the Universal Terms
+              of Service.
             </small>
           </div>
           <div className="flex flex-row mt-4 mb-8 md:mb-0 md:mt-1 gap-8">

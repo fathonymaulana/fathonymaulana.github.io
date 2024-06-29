@@ -63,7 +63,7 @@ const Projects = () => {
                 </span>
               </div>
               <div className="flex h-52 items-center justify-center">
-                <div className="relative h-full w-full bg-cover dark:hidden">
+                <div className="relative h-full w-fit bg-cover flex items-center justify-center">
                   <img src={project.img} alt="project image" />
                 </div>
               </div>

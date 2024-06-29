@@ -4,24 +4,24 @@ const Hero = () => {
   return (
     <section className="flex-1">
       <div className="grid">
-        <div className="w-full bg-white py-10 md:py-16">
+        <div className="w-full py-10 md:py-16">
           <div className="container mx-auto max-w-5xl px-4 sm:px-6 md:px-8 xl:px-5 space-y-8 text-center md:text-left ">
             <div className="md:flex items-center justify-between md:space-x-4">
               <div className="md:w-1/2 grid space-y-8">
                 <p className="text-primary font-semibold">
                   Welcome to Tony Portfolio
                 </p>
-                <h1 className="max-w-3xl text-4xl font-semibold leading-none text-gray-900 lg:text-5xl xl:text-6xl dark:text-white">
+                <h1 className="max-w-3xl text-4xl font-extrabold leading-none text-gray-900 lg:text-5xl xl:text-6xl dark:text-white tracking-tight">
                   <span>The repository for my </span>
                   <span className="text-primary">Personal Portfolio</span>!
                   <span></span>
                 </h1>
-                <h2 className="text-base font-light text-gray-600 dark:text-400 items-center">
+                <p className="mx-auto max-w-3xl text-left text-lg font-normal text-gray-500 dark:text-gray-400">
                   This repository showcases my projects, skills, and
                   accomplishments as a developer. It includes a collection of my
                   work, from coding projects to professional experiences,
                   highlighting my journey and expertise in the tech world.
-                </h2>
+                </p>
                 <div className="pb-8 flex-1 items-center space-x-4 font-medium">
                   <a
                     rel="noopener noreferrer "
@@ -57,7 +57,8 @@ const Hero = () => {
                 </div>
               </div>
               <div className="md:flex-1 items-start justify-center relative">
-                <img src="/images/hero-image.png" alt="Hero Image" />
+                <img src="/images/hero-image-light.png" alt="Hero Image" className="dark:hidden" />
+                <img src="/images/hero-image-dark.png" alt="Hero Image" className="hidden dark:block" />
               </div>
             </div>
           </div>
