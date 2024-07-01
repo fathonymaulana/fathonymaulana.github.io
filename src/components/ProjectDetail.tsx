@@ -89,7 +89,7 @@ const ProjectDetail = () => {
                       All projects list
                     </h2>
                     <p className="text-sm">
-                      Still not enough? Click on a tile to view the project.
+                      Still not enough? Click view study case or visit website button to view the porject.
                     </p>
                   </div>
                   {projectsData.map((project) => (

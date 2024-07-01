@@ -28,7 +28,7 @@ const SidebarNav = () => {
             <Sidebar.Item href="Introduction">Introduction</Sidebar.Item>
             <Sidebar.Item href="License">License</Sidebar.Item>
           </Sidebar.Collapse>
-          <Sidebar.Item href="#">
+          <Sidebar.Item href="Figma">
             FIGMA
           </Sidebar.Item>
           <Sidebar.Item href="About">

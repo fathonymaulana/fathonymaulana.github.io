@@ -57,14 +57,16 @@ const Introduction = () => {
                     <Timeline.Point />
                     <Timeline.Content>
                       <Timeline.Title>Personal Projects:</Timeline.Title>
-                      <Timeline.Body>
+                      <Timeline.Body className="flex flex-col gap-4">
                         A variety of projects demonstrating my skills in
                         different programming languages and frameworks.
-                        <img
-                          src="/images/mockup.png"
-                          alt=""
-                          className=" my-4 w-full rounded-xl border border-gray-300 dark:border-gray-600"
-                        />
+                        <a href="Figma" className=" my-4">
+                          <img
+                            src="/images/mockup.png"
+                            alt="Figma"
+                            className="w-full border border-gray-300 dark:border-gray-600 rounded-xl"
+                          />
+                        </a>
                       </Timeline.Body>
                       <Link href="Projects" passHref>
                         <Button color="gray">
@@ -119,9 +121,9 @@ const Introduction = () => {
                       <Timeline.Body>
                         A comprehensive list of my technical skills and
                         proficiencies:
-                        <div className="mt-4 text-black dark:text-white text-lg font-semibold">
+                        <div className="mt-4 ml-4 text-black dark:text-white text-lg font-semibold">
                           Next.js
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             1. Routing and Navigation
                             <li className="mt-2 ml-8 font-normal">
                               Implementing dynamic and static routes
@@ -130,7 +132,7 @@ const Introduction = () => {
                               Nested routing and route protection
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             2. Server-Side Rendering (SSR) and Static Site
                             Generation (SSG)
                             <li className="mt-2 ml-8 font-normal">
@@ -152,7 +154,7 @@ const Introduction = () => {
                               </span>
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             3. API Routes
                             <li className="mt-2 ml-8 font-normal">
                               Creating API endpoints within a Next.js
@@ -162,7 +164,7 @@ const Introduction = () => {
                               Handling API requests and responses
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             4. Data Fetching
                             <li className="mt-2 ml-8 font-normal">
                               Integrating with RESTful APIs and GraphQL
@@ -179,14 +181,14 @@ const Introduction = () => {
                               for data fetching and caching
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             5. Image Optimization
                             <li className="mt-2 ml-8 font-normal">
                               Utilizing Next.js Image component for responsive
                               and optimized images
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             6. Styling
                             <li className="mt-2 ml-8 font-normal">
                               Integrating Tailwind CSS with Next.js
@@ -196,7 +198,7 @@ const Introduction = () => {
                               component-level styles
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             7. Authentication and Authorization
                             <li className="mt-2 ml-8 font-normal">
                               Implementing authentication using libraries like
@@ -206,7 +208,7 @@ const Introduction = () => {
                               Protecting routes and handling user roles
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             8. Performance Optimization
                             <li className="mt-2 ml-8 font-normal">
                               Code splitting and lazy loading
@@ -216,7 +218,7 @@ const Introduction = () => {
                               with tools like Lighthouse
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             9. SEO Best Practices
                             <li className="mt-2 ml-8 font-normal">
                               Using Head component for meta tags and structured
@@ -227,7 +229,7 @@ const Introduction = () => {
                               Twitter Cards)
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             10. Deployment and Hosting
                             <li className="mt-2 ml-8 font-normal">
                               Deploying applications on platforms like Vercel,
@@ -239,9 +241,9 @@ const Introduction = () => {
                             </li>
                           </ul>
                         </div>
-                        <div className="mt-4 text-black dark:text-white text-lg font-semibold">
+                        <div className="mt-4 ml-4 text-black dark:text-white text-lg font-semibold">
                           Tailwind CSS
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             1. Utility-First CSS
                             <li className="mt-2 ml-8 font-normal">
                               Applying utility classes for rapid UI development
@@ -251,7 +253,7 @@ const Introduction = () => {
                               utility-first CSS
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             2. Responsive Design
                             <li className="mt-2 ml-8 font-normal">
                               Creating responsive layouts using Tailwind's
@@ -262,7 +264,7 @@ const Introduction = () => {
                               compatibility
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             3. Customization
                             <li className="mt-2 ml-8 font-normal">
                               Customizing the Tailwind configuration (
@@ -276,7 +278,7 @@ const Introduction = () => {
                               plugins
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             4. Component Styling
                             <li className="mt-2 ml-8 font-normal">
                               Building reusable and consistent UI components
@@ -286,7 +288,7 @@ const Introduction = () => {
                               Tailwind
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             5. Performance Optimization
                             <li className="mt-2 ml-8 font-normal">
                               Purging unused CSS for optimal performance
@@ -295,7 +297,7 @@ const Introduction = () => {
                               Implementing best practices for minimal CSS output
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             6. Integrating with Next.js
                             <li className="mt-2 ml-8 font-normal">
                               Setting up Tailwind in a Next.js project
@@ -305,9 +307,9 @@ const Introduction = () => {
                             </li>
                           </ul>
                         </div>
-                        <div className="mt-4 text-black dark:text-white text-lg font-semibold">
+                        <div className="mt-4 ml-4 text-black dark:text-white text-lg font-semibold">
                           Figma
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             1. UI/UX Design
                             <li className="mt-2 ml-8 font-normal">
                               Creating wireframes, mockups, and prototypes
@@ -316,7 +318,7 @@ const Introduction = () => {
                               Designing intuitive and user-friendly interfaces
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             2. Collaboration and Handoff
                             <li className="mt-2 ml-8 font-normal">
                               Using Figma's collaboration tools for real-time
@@ -327,7 +329,7 @@ const Introduction = () => {
                               proper annotations
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             3. Component Libraries
                             <li className="mt-2 ml-8 font-normal">
                               Building and maintaining design systems and
@@ -337,7 +339,7 @@ const Introduction = () => {
                               Utilizing reusable components, styles, and assets
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             4. Prototyping and Interaction Design
                             <li className="mt-2 ml-8 font-normal">
                               Creating interactive prototypes to demonstrate
@@ -348,7 +350,7 @@ const Introduction = () => {
                               transitions, and animations
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             5. Design to Code
                             <li className="mt-2 ml-8 font-normal">
                               Translating Figma designs into pixel-perfect code
@@ -358,7 +360,7 @@ const Introduction = () => {
                               guidelines
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             6. Accessibility
                             <li className="mt-2 ml-8 font-normal">
                               Designing accessible interfaces considering WCAG
@@ -370,9 +372,9 @@ const Introduction = () => {
                             </li>
                           </ul>
                         </div>
-                        <div className="mt-4 text-black dark:text-white text-lg font-semibold">
+                        <div className="mt-4 ml-4 text-black dark:text-white text-lg font-semibold">
                           General Frontend Development Skills
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             1. HTML/CSS
                             <li className="mt-2 ml-8 font-normal">
                               Writing semantic HTML and modular CSS
@@ -382,7 +384,7 @@ const Introduction = () => {
                               Flexbox, and custom properties
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             2. JavaScript/TypeScript
                             <li className="mt-2 ml-8 font-normal">
                               Proficiency in modern JavaScript (ES6+) and
@@ -392,7 +394,7 @@ const Introduction = () => {
                               Writing clean, maintainable, and scalable code
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             3. React.js
                             <li className="mt-2 ml-8 font-normal">
                               Building functional components with hooks
@@ -402,7 +404,7 @@ const Introduction = () => {
                               context API
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             4. Version Control
                             <li className="mt-2 ml-8 font-normal">
                               Using Git for version control and collaboration
@@ -412,7 +414,7 @@ const Introduction = () => {
                               request workflows
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             5. Testing
                             <li className="mt-2 ml-8 font-normal">
                               Writing unit and integration tests with Jest and
@@ -423,7 +425,7 @@ const Introduction = () => {
                               automated testing
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             6. Tooling and Build Systems
                             <li className="mt-2 ml-8 font-normal">
                               Configuring and optimizing Webpack, Babel, and
@@ -434,9 +436,9 @@ const Introduction = () => {
                             </li>
                           </ul>
                         </div>
-                        <div className="mt-4 text-black dark:text-white text-lg font-semibold">
+                        <div className="mt-4 ml-4 text-black dark:text-white text-lg font-semibold">
                           Soft Skills
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             1. Problem Solving
                             <li className="mt-2 ml-8 font-normal">
                               Analytical thinking and troubleshooting
@@ -445,7 +447,7 @@ const Introduction = () => {
                               Creative solutions to complex challenges
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             2. Communication
                             <li className="mt-2 ml-8 font-normal">
                               Clear and effective communication with team
@@ -455,7 +457,7 @@ const Introduction = () => {
                               Documenting processes, decisions, and code
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             3. Collaboration
                             <li className="mt-2 ml-8 font-normal">
                               Working effectively in a team environment
@@ -465,7 +467,7 @@ const Introduction = () => {
                               culture
                             </li>
                           </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
+                          <ul className="ml-4 my-4 text-gray-600 dark:text-gray-400 list-disc text-sm font-medium">
                             4. Adaptability
                             <li className="mt-2 ml-8 font-normal">
                               Staying current with industry trends and
@@ -474,27 +476,6 @@ const Introduction = () => {
                             <li className="mt-2 ml-8 font-normal">
                               Learning and adopting new tools and frameworks as
                               needed
-                            </li>
-                          </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
-                            5. Testing
-                            <li className="mt-2 ml-8 font-normal">
-                              Writing unit and integration tests with Jest and
-                              React Testing Library
-                            </li>
-                            <li className="mt-2 ml-8 font-normal">
-                              Ensuring code quality and reliability through
-                              automated testing
-                            </li>
-                          </ul>
-                          <ul className="ml-4 my-4 text-gray-600 list-disc text-sm font-medium">
-                            6. Tooling and Build Systems
-                            <li className="mt-2 ml-8 font-normal">
-                              Configuring and optimizing Webpack, Babel, and
-                              other build tools
-                            </li>
-                            <li className="mt-2 ml-8 font-normal">
-                              Using package managers like npm or Yarn
                             </li>
                           </ul>
                         </div>
@@ -507,13 +488,15 @@ const Introduction = () => {
                       <Timeline.Title>Education:</Timeline.Title>
                       <Timeline.Body>
                         Details of my educational background and certifications:
-                        <div className="mt-4 text-black dark:text-white text-lg font-semibold">
+                        <div className="mt-4 ml-4 text-black dark:text-white text-lg font-semibold">
                           Universitas Gunadarma
                         </div>
-                        <p className="font-normal">
+                        <p className="font-normal ml-4">
                           Bachelor of Technology (BTech), Information System
                         </p>
-                        <Timeline.Time>2014-2019</Timeline.Time>
+                        <Timeline.Time className="ml-4">
+                          2014-2019
+                        </Timeline.Time>
                       </Timeline.Body>
                     </Timeline.Content>
                   </Timeline.Item>

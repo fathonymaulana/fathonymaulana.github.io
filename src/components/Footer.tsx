@@ -1,6 +1,8 @@
 "use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { Button, Modal } from "flowbite-react";
 
 const resources = [
   {
@@ -8,7 +10,7 @@ const resources = [
     text: "Docs",
   },
   {
-    href: "/",
+    href: "Figma",
     text: "Figma",
   },
   {
@@ -37,6 +39,7 @@ const helpSupport = [
 ];
 
 const Footer = () => {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <div className="w-full dark:bg-gray-800 md:flex md:items-center md:justify-between rounded-none bg-gray-50 pb-8 pt-16 shadow-none border-t border-gray-200 dark:border-gray-600">
       <div className="mx-auto w-full max-w-6xl px-4 lg:px-20">
@@ -123,8 +126,7 @@ const Footer = () => {
               Constitution. The Tony Portfolio wordmark is a trademark
               registered from Tony Portfolio Operating Company, LLC in the US
               and other countries. The “Tony” logo is a registered trademark of
-              fathonymaulanagithubio-fathony-maulanas-projects.vercel.app, LLC
-              in the US.
+              fathonymaulana.vercel.app, LLC in the US.
             </small>
             <small>
               Use of this Site is subject to the terms of Use. By using this
@@ -133,12 +135,37 @@ const Footer = () => {
             </small>
           </div>
           <div className="flex flex-row mt-4 mb-8 md:mb-0 md:mt-1 gap-8">
-            <a href="#" className="text-xs hover:underline">
+            <a
+              onClick={() => setOpenModal(true)}
+              className="text-xs hover:underline cursor-pointer w-fit h-fit"
+            >
               Privacy policy
             </a>
-            <a href="#" className="text-xs hover:underline">
-              Cookie
-            </a>
+            <Modal show={openModal} onClose={() => setOpenModal(false)}>
+              <Modal.Header>Privacy policy</Modal.Header>
+              <Modal.Body>
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Welcome to Tony's personal portfolio website. Your privacy
+                    is very important to us. This privacy policy outlines the
+                    types of information we collect, how we use it, and the
+                    steps we take to ensure your information is protected.
+                  </p>
+                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    The security of your personal information is important to
+                    me. I implement a variety of security measures to maintain
+                    the safety of your personal information when you enter,
+                    submit, or access your personal information.
+                  </p>
+                </div>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button onClick={() => setOpenModal(false)}>I accept</Button>
+                <Button color="gray" onClick={() => setOpenModal(false)}>
+                  Decline
+                </Button>
+              </Modal.Footer>
+            </Modal>
           </div>
         </div>
       </div>
