@@ -77,7 +77,7 @@ const Projects = () => {
             className="group relative flex items-stretch justify-center p-0.5 text-center font-medium transition-[color,background-color,border-color,text-decoration-color,fill,stroke,box-shadow] focus:z-10 focus:outline-none border border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-cyan-300 enabled:hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-600 dark:text-white dark:focus:ring-gray-700 dark:enabled:hover:border-gray-700 dark:enabled:hover:bg-gray-700 rounded-lg"
           >
             <span className="flex items-stretch transition-all duration-200 rounded-md px-4 py-2 text-sm">
-              View all components
+              View all projects
             </span>
           </a>
         </div>

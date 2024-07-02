@@ -12,10 +12,8 @@ const ServiceC = () => {
                 Design with Figma
               </h2>
               <p className="text-lg dark:text-gray-400">
-                Get started with the most popular and definitive design system
-                built in Figma and used by thousands of designers and agencies
-                that is compatible across multiple frameworks in the Flowbite
-                ecosystem including React, Vue, Svelte, and Flowbite.
+                Design with Figma involves leveraging a powerful, browser-based
+                design tool used for interface design and prototyping.
               </p>
             </div>
             <div className="flex flex-col items-center gap-4 dark:text-gray-400">
@@ -25,7 +23,7 @@ const ServiceC = () => {
               </p>
               <div className="isolate flex flex-col items-start gap-4 self-stretch">
                 <a
-                  href=""
+                  href="Figma"
                   className="inline-flex max-w-lg items-center justify-start gap-5 self-stretch rounded-lg border border-gray-300 bg-white px-4 py-3.5 text-center text-base font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 sm:gap-7 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                 >
                   <svg

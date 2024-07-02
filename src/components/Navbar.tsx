@@ -68,12 +68,31 @@ const Navbar = () => {
           >
             <ul className="h-screen md:h-auto items-center justify-center md:flex flex-col">
               {menus.map((menu, index) => (
-                <li key={index} className="pb-6 text-xl text-gray-600 dark:text-gray-400 py-2 md:px-6 text-center">
+                <li
+                  key={index}
+                  className="pb-6 text-xl text-gray-600 dark:text-gray-400 py-2 md:px-6 text-center"
+                >
                   <Link href={menu.href} onClick={() => setNavbar(!navbar)}>
                     {menu.text}
                   </Link>
                 </li>
               ))}
+              <div className="pb-8 flex flex-col items-center justify-center gap-4 font-medium">
+                <a
+                  rel="noopener noreferrer "
+                  className="hover:bg-white border-2 rounded-lg text-white  inline-flex items-center py-3 px-5 bg-primary border-primary hover:text-primary"
+                  href="/contact-us"
+                >
+                  Discord
+                </a>
+                <a
+                  rel="noopener noreferrer "
+                  className=" text-primary hover:bg-primary hover:text-white rounded-lg py-3 px-5 border-2  md:inline-flex items-center sm:block border-primary "
+                  href="Introduction"
+                >
+                  Github
+                </a>
+              </div>
             </ul>
           </div>
           <div className="flex items-center">

@@ -33,22 +33,9 @@ const ServiceB = () => {
                 Compatible with Tailwind CSS
               </h2>
               <p className="text-lg text-gray-500 dark:text-gray-400">
-                Flowbite React uses the utility classes from Tailwind CSS under
-                the hood and provides an advanced 
-                <a
-                  href="https://flowbite-react.com/docs/customize/theme"
-                  className="px-1 text-lg font-medium text-primary underline hover:no-underline dark:text-white"
-                  target="_blank"
-                >
-                  theming system
-                </a>
-                 that you can use to apply classes to UI components and their
-                underlying HTML elements structure.
-              </p>
-              <p className="text-lg text-gray-500 dark:text-gray-400">
-                This theming system can be used either on an application or
-                component level and Flowbite React also allows you to set up
-                class name attributes on each component.
+                Designing with Figma and ensuring compatibility with Tailwind
+                CSS involves creating designs that can seamlessly translate into
+                Tailwind's utility-first framework.
               </p>
               <p className="text-lg text-gray-500 dark:text-gray-400">
                 <a
@@ -56,7 +43,7 @@ const ServiceB = () => {
                   className="pr-1 text-lg font-medium text-primary underline hover:no-underline dark:text-white"
                   target="_blank"
                 >
-                  Tailwind CSS 
+                  Tailwind CSS
                 </a>
                 is the most popular and open-source utility-first CSS framework
                 on the market.
