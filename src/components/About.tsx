@@ -17,15 +17,26 @@ const About = () => {
                   About
                 </span>
                 <h1 className="mb-4 mt-4 inline-block w-full text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                  Website creation services using React, Flowbite & Tailwind CSS
+                  Hello! I'm Fathony Maulana,
                 </h1>
                 <p className="text-lg text-gray-600 dark:text-gray-400">
-                  Let's start building a modern web application using React
-                  components based on Tailwind CSS
+                  a passionate Frontend Developer with over 2 years of
+                  experience in creating visually stunning and highly
+                  interactive web applications. I specialize in translating
+                  complex ideas into seamless digital experiences that captivate
+                  and engage users.
                 </p>
               </div>
               <div className="py-8">
                 <p className="text-gray-600 dark:text-gray-400">
+                  Throughout my career, I've had the privilege of working on
+                  diverse projects ranging from small business websites to
+                  large-scale applications. My work has been recognized for its
+                  attention to detail, responsiveness, and innovative design
+                  solutions. I take pride in delivering high-quality code and
+                  exceptional user experiences.
+                </p>
+                <p className="mt-4 text-gray-600 dark:text-gray-400">
                   I started my professional career as a IT Quality Assurance
                   Tester around 2019. In 2022, I resigned from my job at
                   <a
@@ -66,7 +77,7 @@ const About = () => {
                   >
                     <span className="icon icon-link"></span>
                   </a>
-                  Getting started
+                  Experience
                   <a
                     href="#getting-started"
                     aria-label="Link to this section: [object Object],Getting started"
